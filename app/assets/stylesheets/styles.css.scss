@@ -1,1 +1,31 @@
+/*How to change font*/
+
+/*$baseFontFamily: Oxygen;
+@import url(http://fonts.googleapis.com/css?family=Oxygen);*/
+
+$navbarBackgroundHighlight: lightgray;
+$navbarBackground: white;
+/*$btnInverseBackground: lightgray;*/
+
 @import 'bootstrap';
+
+body {
+	padding-top: 60px;
+}
+
+@import 'bootstrap-responsive';
+
+
+/*Eliminate border beneath menu bar*/
+.navbar-inner {
+	@include box-shadow (none !important);
+	border: 0;
+}
+
+.footer{
+	margin-top: 50px;
+	color: $grayLight;
+	a{
+		color: $gray;
+	}
+}

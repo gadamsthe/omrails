@@ -1,5 +1,9 @@
 Omrails::Application.routes.draw do
+  devise_for :users
+
   get 'about' => 'pages#about'
+
+  get 'new_user_registration' => 'devise/registrations#new'
 
   root :to => 'pages#home' 
 
