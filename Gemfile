@@ -6,10 +6,8 @@ gem 'devise'
 gem 'simple_form'
 gem "paperclip", "~> 3.0"
 gem 'aws-sdk'
-gem "infinitescrolling-rails", "~> 0.3.0"
 gem 'bootstrap-will_paginate'
 gem 'will_paginate'
-
 gem 'faker'
 
 group :production do

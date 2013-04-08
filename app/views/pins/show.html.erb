@@ -1,17 +1,17 @@
-<div class="row">
-	<div class="span6 offset3">
+<div class="row-fluid">
+	<div class="span12">
 		<div class="well">
 			<%= image_tag @pin.image %>
 			<p>
 	  		<%= @pin.description %>
 			</p>
-			<p>
-	  		<%= @pin.user.name %>
-			</p>
+			<p><h1>
+	  		<%= @pin.user.name %> 
+			</h1></p>
 			<% if current_user == @pin.user %>
 				<%= link_to 'Edit', edit_pin_path(@pin) %> |
 			<% end %>
-			<%= link_to 'Back', pins_path %>
+			<%= link_to 'Back', pins_path, class: "btn btn-inverse btn-large" %>
 		</div>
 	</div>
 </div>
