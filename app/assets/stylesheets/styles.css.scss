@@ -3,7 +3,7 @@
 /*$baseFontFamily: Oxygen;
 @import url(http://fonts.googleapis.com/css?family=Oxygen);*/
 
-$navbarBackgroundHighlight: lightgray;
+$navbarBackgroundHighlight: white;
 $navbarBackground: white;
 /*$btnInverseBackground: lightgray;*/
 
@@ -35,13 +35,13 @@ body {
 .box {
   margin: 5px;
   padding: 5px;
-  font-size: 11px;
+  font-size: 15px;
   line-height: 1.4em;
   float: left;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border-radius: 5px;
-  box-shadow: 1px 1px 10px #444;
+  box-shadow: 1px 1px 5px #444;
   width: 214px;
 }
 
