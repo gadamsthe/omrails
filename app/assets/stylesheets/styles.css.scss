@@ -12,11 +12,11 @@ $navbarBackground: white;
 @import 'bootstrap';
 
 body {
-	padding-top: 60px;
-}
+  padding-top: 5em;}
 
 @import 'bootstrap-responsive';
 
+.navbar .container { height: 4em; }
 
 /*Eliminate border beneath menu bar*/
 .navbar-inner {
@@ -58,6 +58,7 @@ body {
 .description {
   margin: 10px 0 5px;
 }
+
 
 
 

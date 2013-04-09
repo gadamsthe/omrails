@@ -9,7 +9,6 @@ gem 'aws-sdk'
 gem 'bootstrap-will_paginate'
 gem 'will_paginate'
 gem 'faker'
-# gem "infinitescrolling-rails", "~> 0.3.0"
 gem "friendly_id", "~> 4.0.9"
 
 group :production do
