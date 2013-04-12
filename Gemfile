@@ -10,6 +10,8 @@ gem 'bootstrap-will_paginate'
 gem 'will_paginate'
 gem 'faker'
 gem "friendly_id", "~> 4.0.9"
+gem 'omniauth'
+gem 'omniauth-facebook'
 
 group :production do
 	gem 'pg'

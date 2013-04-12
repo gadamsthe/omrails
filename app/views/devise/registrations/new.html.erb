@@ -13,6 +13,8 @@
 
 	<%= f.submit "Sign Up", class: "btn btn-primary" %>
 
+	<%= link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook) %>
+
 </div>
 <% end %>
 

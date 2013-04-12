@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130409175902) do
+ActiveRecord::Schema.define(:version => 20130412184652) do
 
   create_table "pins", :force => true do |t|
     t.string   "description"
@@ -26,6 +26,19 @@ ActiveRecord::Schema.define(:version => 20130409175902) do
   end
 
   add_index "pins", ["user_id"], :name => "index_pins_on_user_id"
+
+  create_table "rails_admin_histories", :force => true do |t|
+    t.text     "message"
+    t.string   "username"
+    t.integer  "item"
+    t.string   "table"
+    t.integer  "month",      :limit => 2
+    t.integer  "year",       :limit => 5
+    t.datetime "created_at",              :null => false
+    t.datetime "updated_at",              :null => false
+  end
+
+  add_index "rails_admin_histories", ["item", "table", "month", "year"], :name => "index_rails_admin_histories"
 
   create_table "users", :force => true do |t|
     t.string   "email",                  :default => "",    :null => false
@@ -43,6 +56,8 @@ ActiveRecord::Schema.define(:version => 20130409175902) do
     t.string   "name"
     t.string   "slug"
     t.boolean  "admin",                  :default => false
+    t.string   "provider"
+    t.string   "uid"
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true
