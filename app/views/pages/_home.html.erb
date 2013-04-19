@@ -1,17 +1,35 @@
 <% if user_signed_in? %>
-	<h1>Hello There.</h1>
+	<div class="hero-unit">
+	<div class="row">
+	  <div class="span8">
+	  	<h1>Entrepreneurs<br>
+	  		Designers &<br>
+	  		Developers</h1>
+	  </div>
+	</div>
+
+	<br>
+	<p>
+		<h3>What Motivates You?</h3><%= link_to "Share Your Inspiration", new_pin_path %> & Motivate Creative, Talented People Like Yourself.
+	</div>
+
 <% else %>
 
 <div class="hero-unit">
 	<div class="row">
 	  <div class="span8">
-	  	<h1>What's up World?!</h1>
+	  	<h1>Entrepreneurs<br>
+	  		Designers &<br>
+	  		Developers</h1>
 	  </div>
 	</div>
+	<br>
 	<p>
-		I'm learning Rails. I'm going to create a web app called mmmNYC.com <%= link_to "Lectures", "http://onemonthrails.com/lectures" %>
-	</p>
-		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-inverse btn-large" %>
+		<h4>What Motivates You?
+		<%= link_to "Share Your Inspiration", new_user_registration_path %> & Motivate Creative, Talented People Like Yourself.</h4>
+
+		<!-- </p>
+		<%= link_to "Sign Up", new_user_registration_path, class: "btn btn-inverse btn-large" %> -->
 		
 	</p>
 </div>
